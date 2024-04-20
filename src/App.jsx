@@ -1,14 +1,32 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
+import HeaderOne from "./Components/HeaderOne";
+import GridSection from "./Components/GridSection";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [myName, setMyName] = useState("Mack Ramirez");
+  const [whatIDo, setWhatIDo] = useState("");
+  const [expect, setExpectation] = useState([
+    {
+      cardOne: "Bring fresh ideas",
+    },
+    { cardTwo: "Problem solving and persistance" },
+    { cardThree: "Bridge gaps finding solutions" },
+    { cardFour: "Recognizing potentials in all situations" },
+    {
+      cardFive: "Teach as many of my colleages what I have learned",
+    },
+    {
+      cardSix: "Playing to each team mates unique strengths",
+    },
+  ]);
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <HeaderOne greeting={myName} />
+      <Narative nararate={whatIDo} />
+      <GridSection expectations={expect} />
     </>
   );
 }
