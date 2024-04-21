@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import HeaderOne from "./Components/HeaderOne";
 import GridSection from "./Components/GridSection";
+import Narative from "./Components/Narative";
 
 function App() {
   const [myName, setMyName] = useState("Mack Ramirez");
