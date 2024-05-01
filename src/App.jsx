@@ -25,7 +25,9 @@ function App() {
 
   return (
     <>
-      <HeaderOne greeting={myName} />
+      <div className="bg-gray-700">
+        <HeaderOne greeting={myName} />
+      </div>
       <Narative nararate={whatIDo} />
       <GridSection expectations={expect} />
     </>
